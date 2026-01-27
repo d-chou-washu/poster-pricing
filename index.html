@@ -1,24 +1,35 @@
 <head>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">  <script type="text/javascript" src="https://d-chou-washu.github.io/poster-pricing/calc.js"></script>
-  <h2>Poster Pricing</h2>
-  <form>
-    <label for="paperType">Paper Type:</label>
-      <select name="paperType" id="paperType">
-        <option value="glossy">Glossy Paper</option>
-        <option value="satin">Satin Paper</option>
-        <option value="fabric">Fabric</option>
-      </select>
-      <br>
-    Poster Height (in): <select name="posterHeight" id="posterHeight">
-        <option value= 24>24</option>
-        <option value= 36>36</option>
-        <option value= 42>42</option>
-      </select>
-    Poster Length (in): <input type="number" id="posterLength" onkeyup="calculatePrice()"></input>
-    <br>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <h2>Poster Pricing Calculator:</h2>
+  <table>
+    <tr>
+      <th> Paper Type </th>
+      <th> Poster Height (in) </th>
+      <th> Poster Length (in) </th>
+    </tr>
+    <tr>
+      <td>
+        <select name="paperType" id="paperType">
+          <option value="glossy">Glossy Paper</option>
+          <option value="satin">Satin Paper</option>
+          <option value="fabric">Fabric</option>
+        </select>
+      </td>
+      <td>
+        <select name="posterHeight" id="posterHeight">
+          <option value= 24>24</option>
+          <option value= 36>36</option>
+          <option value= 42>42</option>
+        </select>
+      </td>
+      <td>
+        <input type="number" id="posterLength" onkeyup="calculatePrice()"></input>
+      </td>
+    </tr>
+  </table>
+  <p>
     Price: <input type="text" id="price" name="price" value="$" readonly>
-  </form>
-
+  </p>
 </head>
