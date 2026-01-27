@@ -1,0 +1,29 @@
+h2 {
+  font-family: 'Libre Baskerville';
+  color: #393939;
+}
+table {
+  font-family: 'Libre Baskerville';
+  color: #393939;
+}
+th {
+  border-bottom: solid #d4d4d8;
+}
+td {
+  text-align: center;
+}
+select {
+  font-family: 'Source Sans Pro';
+  color: #393939;
+  width: 100%;
+  text-align: center;
+}
+p {
+  font-family: 'Libre Baskerville';
+  color: #393939;
+}
+input {
+  font-family: 'Source Sans Pro';
+  color: #393939;
+  text-align: center;
+}
