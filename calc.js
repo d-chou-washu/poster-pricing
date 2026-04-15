@@ -48,3 +48,8 @@ function calculatePrice() {
     );
   }
 }
+
+//Event Listeners
+paperType.addEventListener("input", calculatePrice);
+posterHeight.addEventListener("input", calculatePrice);
+posterLength.addEventListener("input", calculatePrice);
